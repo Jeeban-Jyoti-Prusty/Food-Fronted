@@ -20,7 +20,7 @@ const LoginPage = () => {
     const handelLogin = async (e) => {
         e.preventDefault()
         try {
-            const response = await axios.post("http://localhost:7700/api/auth/login", { email, password }, { withCredentials: true });
+            const response = await axios.post("https://food-backend-t28x.onrender.com/api/auth/login", { email, password }, { withCredentials: true });
 
             console.log(response);
 

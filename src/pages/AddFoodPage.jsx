@@ -45,7 +45,7 @@ const AddFoodPage = () => {
             setLoading(true);
 
             const response = await axios.post(
-                "http://localhost:7700/api/food/create-food",
+                "https://food-backend-t28x.onrender.com/api/food/create-food",
                 formData,
                 {
                     withCredentials: true,

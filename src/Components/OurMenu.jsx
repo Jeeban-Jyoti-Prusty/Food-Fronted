@@ -11,7 +11,7 @@ function OurMenu() {
     const getFoods = async () => {
         try {
             const response = await axios.get(
-                "http://localhost:7700/api/food/get-all-food"
+                "https://food-backend-t28x.onrender.com/api/food/get-all-food"
             );
 
             setFoods(response.data.foods);

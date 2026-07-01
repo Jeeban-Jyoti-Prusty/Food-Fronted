@@ -24,7 +24,7 @@ function BookTable() {
       setLoading(true);
 
       const response = await axios.post(
-        "http://localhost:7700/api/table/create",
+        "https://food-backend-t28x.onrender.com/api/table/create",
         {
           date,
           time,

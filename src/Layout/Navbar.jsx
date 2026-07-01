@@ -21,7 +21,7 @@ function Navbar() {
     const handleLogout = async () => {
         try {
             await axios.get(
-                "http://localhost:7700/api/auth/logout",
+                "https://food-backend-t28x.onrender.com/api/auth/logout",
                 {
                     withCredentials: true,
                 }

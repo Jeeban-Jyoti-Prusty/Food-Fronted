@@ -12,8 +12,8 @@ const Dashboard = () => {
             setLoading(true);
 
             const [foodRes, bookingRes] = await Promise.all([
-                axios.get("http://localhost:7700/api/food/get-all-food"),
-                axios.get("http://localhost:7700/api/table/get-all"),
+                axios.get("https://food-backend-t28x.onrender.com/api/food/get-all-food"),
+                axios.get("https://food-backend-t28x.onrender.com/api/table/get-all"),
             ]);
 
             setTotalFoods(foodRes.data.foods?.length || 0);

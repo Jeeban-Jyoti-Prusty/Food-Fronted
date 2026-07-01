@@ -24,7 +24,7 @@ function RegisterPage() {
 
     try {
       const response = await axios.post(
-        "http://localhost:7700/api/auth/register",
+        "https://food-backend-t28x.onrender.com/api/auth/register",
         {
           fullName,
           email,

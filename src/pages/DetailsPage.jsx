@@ -12,7 +12,7 @@ const DetailsPage = () => {
     const getSingleFood = async () => {
         try {
             const response = await axios.get(
-                `http://localhost:7700/api/food/get-single/${id}`
+                `https://food-backend-t28x.onrender.com/api/food/get-single/${id}`
             );
 
             setFood(response.data.food);

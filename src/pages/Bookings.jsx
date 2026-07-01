@@ -12,7 +12,7 @@ const Bookings = () => {
     const getBookings = async () => {
         try {
             const response = await axios.get(
-                "http://localhost:7700/api/table/get-all"
+                "https://food-backend-t28x.onrender.com/api/table/get-all"
             );
 
             console.log(response.data);
@@ -46,7 +46,7 @@ const Bookings = () => {
 
         try {
             const response = await axios.delete(
-                `http://localhost:7700/api/table/delete/${id}`,
+                `https://food-backend-t28x.onrender.com/api/table/delete/${id}`,
                 {
                     withCredentials: true,
                 }
