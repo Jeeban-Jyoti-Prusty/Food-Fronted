@@ -1,0 +1,114 @@
+/* Base wrapper setup */
+.order-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 7%;
+    background-color: #f8f9fa;
+    font-family: sans-serif;
+}
+
+/* Text styles */
+.text-section {
+    width: 35%;
+    /* border: 1px solid black; */
+}
+
+.text-section h1 {
+    font-size: 55px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.text-section p {
+    color: #666;
+    line-height: 1.5;
+    max-width: 360px;
+    text-align: justify;
+}
+
+/* Grid system for the 9 blocks */
+.apps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns across */
+    gap: 20px;
+    width: 55%;
+    /* border: 1px solid black; */
+}
+
+/* Individual card styles */
+.card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Simple Brand Colors */
+.color-uber {
+    color: #06C167;
+}
+
+.color-grubhub {
+    color: #FF002B;
+}
+
+.color-postmates {
+    color: #000000;
+}
+
+.color-doordash {
+    color: #FF3008;
+}
+
+.color-foodpanda {
+    color: #D70F64;
+}
+
+.color-deliveroo {
+    color: #00CDBC;
+}
+
+.color-instacart {
+    color: #43B02A;
+}
+
+.color-justeat {
+    color: #FF2E00;
+}
+
+.color-didi {
+    color: #FF7D00;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE (576px or smaller)
+   ========================================= */
+@media (max-width: 576px) {
+    .order-container {
+        flex-direction: column;
+        /* Stack text on top, grid below */
+        padding: 20px;
+        text-align: center;
+    }
+
+    .text-section {
+        width: 100%;
+        /* Take full width on mobile */
+        margin-bottom: 30px;
+    }
+
+    .apps-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* Switch to 2 columns on small screens */
+        width: 100%;
+
+    }
+
+}

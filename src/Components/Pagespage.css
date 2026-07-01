@@ -1,0 +1,98 @@
+/* Container styling to center the page contents */
+.blog-section {
+  width: 100%;
+  /* margin: 0 auto; */
+  padding: 60px 7%;
+  background-color: #fafafa; /* Off-white page background matching the image */
+}
+
+/* ==========================================================
+   HEADER TYPE STYLES (Exact Font Matching)
+   ========================================================== */
+.blog-header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.blog-header h1 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif; /* Elegant serif look */
+  font-size: 52px;
+  font-weight: 400;
+  color: #2b352a; /* Soft dark slate/greenish tint from image */
+  margin: 0 0 12px 0;
+}
+
+.blog-header p {
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif; /* Clean sans-serif info text */
+  font-size: 14px;
+  color: #666666;
+  max-width: 460px; /* Forces text wrap exactly like your example screenshot */
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* ==========================================================
+   CARDS WRAPPER & BOX STYLES
+   ========================================================== */
+.blog-flex-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to gracefully shift to a new line */
+  gap: 20px; /* Even spacing between items */
+}
+
+/* Individual Card Blocks */
+.blog-card {
+  background-color: #ffffff;
+  /* (100% / 4 columns) minus gap spacing calculation */
+  width: calc(25% - 15px); 
+  border-radius: 12px;
+  overflow: hidden; /* Makes sure images adhere to card rounded corners */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03); /* Subtle, ultra-soft gray drop shadow */
+  border: 1px solid #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover; /* Keeps food image aspects safe without distortion */
+}
+
+/* Text Padding Inside Cards */
+.blog-card-body {
+  padding: 20px;
+}
+
+.blog-date {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 13px;
+  color: #9c9c9c; /* Lighter date color label */
+  display: block;
+  margin-bottom: 8px;
+}
+
+.blog-title {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600; /* Semi-bold title weighting */
+  color: #2c2c2c;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* ==========================================================
+   MOBILE RESPONSIVE STYLES (576px and below)
+   ========================================================== */
+@media (max-width: 576px) {
+  .blog-header h1 {
+    font-size: 34px; /* Makes titles appropriately legible on mobile viewports */
+  }
+
+  /* Force cards to expand to full row stack widths on mobile */
+  .blog-card {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

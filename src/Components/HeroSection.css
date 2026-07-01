@@ -1,0 +1,73 @@
+.Hero {
+    background-image: url("../assets/food banner.png");
+    height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.Hero .Hero-content {
+    /* border: 1px solid black; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Hero-content h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.Hero-content p {
+    font-size: 1.3rem;
+    color: rgb(83, 79, 79);
+    width: 63%;
+    margin-top: 15px;
+}
+
+.Hero-content .book {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 100px;
+
+}
+
+.Hero-content .book button {
+    padding: 14px 25px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+
+}
+
+.book .btn1 {
+    background-color: brown;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.book .btn2 {
+    background-color: transparent;
+    color: black;
+    border: 1.5px solid gray;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width:576px) {
+    .Hero {
+        background-position: center left;
+        height: 86vh;
+    }
+
+}
